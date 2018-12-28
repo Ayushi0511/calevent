@@ -1,5 +1,6 @@
 var express= require('express');
 var bodyParser= require('body-parser');
+var port= process.env.PORT || 8080;
 var app = express();
 var calController=require('./controllers/calenderControl.js');
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
@@ -10,5 +11,5 @@ app.set ('view engine','ejs');
 
 calController(app);//firing controller
 
-app.listen(8080);//listening
+app.listen(port);//listening
 console.log("you are  listening to port 8080");

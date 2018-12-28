@@ -2,11 +2,18 @@
   "name": "calenderapp",
   "version": "1.0.0",
   "description": "event planner",
-  "start": "app.js",
+ "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "mongoose": "^5.4.0"
-  }
+    "mongoose": "^5.4.1"
+  },
+"engines":{
+"node":"10.14.2",
+"npm":"6.5.0"
+}
 }
